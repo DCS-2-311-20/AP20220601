@@ -5,7 +5,7 @@
 "use strict"; // 厳格モード
 
 import * as THREE from 'three';
-import { TrackballControls } from 'control';
+
 import GUI from 'gui';
 
 // ３Ｄページ作成関数の定義
@@ -49,6 +49,7 @@ function init() {
   const cubeGeometry = new THREE.BoxGeometry(2, 2, 2);
   const cubeMaterial = new THREE.MeshNormalMaterial();
   const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+
   // 立方体にテクスチャを登録
 
   // 立方体の位置
